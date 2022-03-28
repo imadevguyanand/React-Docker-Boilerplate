@@ -42,7 +42,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/react-docker-starter:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/react-docker-boilerplate:latest
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build, Push and Release a Docker container to Heroku.
